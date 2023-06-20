@@ -1,0 +1,87 @@
+@charset 'utf-8';
+
+html {
+    /*
+    웹폰트
+        1. 구글 폰트에서 Noto Sans검색
+        2. 적당한 폰트 선택 (R400, B600)
+        3. 폰트를 html에서 link태그를 통해 포함.
+        4. 포함된 폰트를 CSS의 html 태그에서설정
+    */
+    font-size : 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+body {
+    /* 수평 스크롤을 없앤다.*/
+    overflow-x: hidden;
+    /* 글간격을 5%정도 좁힌다.*/
+    letter-spacing: -0.05em;
+
+
+}
+
+a {
+    /*언더라인을 없앤다.*/
+    text-decoration: none;
+    color:black;
+
+}
+.topic-table {
+    text-align: center;
+    margin-top : 2em;
+}
+.local-nav {
+    position: absolute;
+    width: 100%;
+    height: 52px;
+    left: 0;
+    top: 45px;
+    
+}
+.product-name {
+    font-size: 7.5rem;
+    text-align: center;
+
+    margin-top: 2em;
+
+}
+
+.global-nav {
+    position: absolute;
+    
+    width: 100%;
+    height : 44px;
+    left : 0;
+    top : 0;
+
+}
+
+.global-nav-links {    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100%;
+    max-width: 1000px;
+    margin : 0 auto;
+
+}
+
+.result-nav {
+    text-align: center;
+    height : 60px;
+
+    margin-top: 500px;
+}
+
+.dark-mode
+{
+    background-color : #0e0e10;
+    color : white;
+}
+
+.dark-mode > nav > div > a
+{
+    color : white;
+}
