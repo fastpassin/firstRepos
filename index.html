@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수와 변수 이름 생성기</title>
+
+    <!-- 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="global-nav">
+        <div class="global-nav-links">
+            <a href="reason.html" class="global-nav-link">Reason for made</a>
+            <a href="#" class="global-nav-link">How to work</a>
+            <a href="index.html" class="global-nav-link">Home</a>
+            <a href="#" id = "theme" onclick="switchMode();">Dark mode</a>
+        </div>
+    </nav>
+    <nav class="local-nav">
+        <h1 class="product-name">함수 변수 이름짓기</h1>
+        <div class="topic-table">
+            <label for="topicInput" class="topic-Input">주제 입력:</label>
+            <input type="text" id="topicInput">
+            <button onclick="generateName()">이름 생성</button>
+        </div>
+    </nav>
+    <nav class="result-nav">
+        <h2 style="margin-bottom: 15px">생성된 이름</h2>
+            <ul>
+                <div id="result"></div>
+            </ul>
+    </nav>
+    <script src="main.js"></script>
+</body>
+</html>
